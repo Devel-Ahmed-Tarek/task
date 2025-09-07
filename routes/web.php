@@ -4,7 +4,7 @@ use App\Http\Controllers\EmployeeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return "Hello World";
+    return redirect()->route('employees.index');
 });
 
 // Employee web routes
